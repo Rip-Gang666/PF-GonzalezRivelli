@@ -82,7 +82,7 @@ body {
 .hero_area {
   height: 100vh;
   position: relative;
-  background-image: url(../images/hero-bg.jpg);
+  background-color: #888383;
   background-size: cover;
   background-position: right;
   background-repeat: no-repeat;
@@ -117,15 +117,15 @@ body {
       width: 100%;
 
       &.b1 {
-        background-image: url(../images/a-1.jpg);
+        background-image: url(../images/jack.png);
       }
 
       &.b2 {
-        background-image: url(../images/hero-side-bg2.jpg);
+        background-image: url(../images/moby.png);
       }
 
       &.b3 {
-        background-image: url(../images/hero-side-bg.jpg);
+        background-image: url(../images/mujer.png);
       }
     }
   }
@@ -204,16 +204,7 @@ a:focus {
 
 
 
-.custom_nav-container .nav_search-btn {
-  background-image: url(../images/search-icon.png);
-  background-size: 22px;
-  background-repeat: no-repeat;
-  background-position-y: 7px;
-  width: 35px;
-  height: 35px;
-  padding: 0;
-  border: none;
-}
+
 
 .navbar {
   .navbar-brand {
@@ -304,9 +295,24 @@ a:focus {
       display: flex;
       align-items: center;
       position: unset;
+    
+      
 
-      .detail_box {
-        padding-left: 25px;
+      
+
+     .detail_box_simple{
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      padding-left: 45px;
+
+      
+      
+
+        .derretido{
+          width: 355px;
+          border-radius: 15px;
+        }
+       
 
         h1 {
           font-weight: bold;
@@ -314,7 +320,10 @@ a:focus {
           font-size: 3rem;
           margin-bottom: 30px;
         }
-
+      }  
+      .detail_box {
+        padding-left: 25px;
+      
         p {
           color: #b5b0b0;
         }
@@ -475,7 +484,7 @@ a:focus {
           left: 0;
           width: 100%;
           height: 100%;
-          background-color: #f6f6f6;
+          background-color: #888383;
         }
 
         &.b1 {
@@ -536,6 +545,10 @@ a:focus {
 
 .portfolio_section {
   overflow-x: hidden;
+  background-color: #888383;
+  overflow-x: scroll;
+  overscroll-behavior-x: contain;
+  scroll-snap-type: x proximity;
 
   .portfolio_container {
     margin-top: 45px;
@@ -547,6 +560,7 @@ a:focus {
 
       img {
         width: 100%;
+        
       }
 
       .link-box {
@@ -589,7 +603,7 @@ a:focus {
 // quality section
 
 .quality_section {
-  background-image: url(../images/quality-bg.jpg);
+  background-image: url(../images/fondo.jpeg);
   background-size: cover;
   color: $white;
   margin-top: -2px;
@@ -597,6 +611,7 @@ a:focus {
   .quality_container {
     h2 {
       font-weight: bold;
+      text-align: center;
     }
 
     .detail-box {
@@ -680,7 +695,7 @@ a:focus {
 // price section
 
 .price_section {
-  background-color: #f8f8f8;
+  background-color: #888383;
 
   .price_container {
     display: flex;
@@ -962,7 +977,7 @@ a:focus {
 
 // contact section
 .contact_section {
-  background-image: url(../images/contact-bg.jpg);
+  background-color: #888383;
   background-size: cover;
   position: relative;
   color: $white;
@@ -1222,4 +1237,46 @@ a:focus {
 
 }
 
-// end footer section
+// end footer section //
+
+.grid-gallery {
+  background-color: #888383;
+  .arte {
+    background-color: #888383;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: center;
+    padding-top: 30px;
+  }
+  .box-img { 
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 10px;
+    padding: 50px;
+  }
+    img{
+      width: 100%;
+      height: 100%;
+      border-radius: 90px;
+      transform: scale(var(--escala, 1));
+      transition: transform 0.25s; 
+      
+    }
+    img:hover{
+      --escala: 1.2;
+    }
+    
+    
+      
+      
+      
+
+      
+    
+
+  
+}
+
+
+/* footer section*/
+

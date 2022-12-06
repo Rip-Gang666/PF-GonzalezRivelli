@@ -1,11 +1,10 @@
-$btnColor: #121212;
-$white: #ffffff;
-$black:#000000;
-$primary1: #f0b016;
-
 
 @import "_bootstrap.scss";
 @import "_responsive.scss";
+@import "_mixin.scss";
+@import "_variables.scss";
+
+
 
 @mixin main-font {
   font-family: 'Raleway', sans-serif;

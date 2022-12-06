@@ -6,32 +6,7 @@
 
 
 
-@mixin main-font {
-  font-family: 'Raleway', sans-serif;
-}
 
-@mixin secondary-font {
-  font-family: 'Dosis', sans-serif;
-}
-
-@mixin hero_btn($col1, $col2, $pad1, $pad2, $b-radius) {
-  display: inline-block;
-  padding: $pad1 $pad2;
-  background-color: $col1;
-  border: 1px solid $col1;
-  color: $col2;
-  border-radius: $b-radius;
-
-  &:hover {
-    background-color: transparent;
-    color: $col1;
-  }
-}
-
-@mixin upperBold {
-  text-transform: uppercase;
-  font-weight: bold;
-}
 
 
 

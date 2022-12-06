@@ -3,6 +3,10 @@ $white: #ffffff;
 $black:#000000;
 $primary1: #f0b016;
 
+
+@import "_bootstrap.scss";
+@import "_responsive.scss";
+
 @mixin main-font {
   font-family: 'Raleway', sans-serif;
 }
@@ -29,6 +33,10 @@ $primary1: #f0b016;
   text-transform: uppercase;
   font-weight: bold;
 }
+
+
+
+
 
 
 
@@ -304,14 +312,13 @@ a:focus {
       display: grid;
       grid-template-columns: 1fr 1fr;
       padding-left: 45px;
+     }
 
       
       
 
-        .derretido{
-          width: 355px;
-          border-radius: 15px;
-        }
+        
+        
        
 
         h1 {
@@ -443,7 +450,7 @@ a:focus {
     }
   }
 
-}
+
 
 
 
